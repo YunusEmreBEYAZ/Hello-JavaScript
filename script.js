@@ -82,3 +82,40 @@ let markLoverBMI = false;
         console.log(markLoverBMI)
  };
  */
+
+ let firstName = 'Yunus';
+ let job = 'Web Developer';
+ let birthYear = 1992;
+ let year = 2022;
+
+ const yunus = "I'm" + firstName + ', a ' + (year - birthYear) + ' years old' + job;
+ console.log(yunus)
+
+ const newYunus = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+ console.log(newYunus);
+
+ console.log('string \n\ new \n\ lines');
+
+ console.log(`string
+ new
+ lines`);
+                //Control Structure -- IF/ELSE statements:
+ const age = 2;
+ const isOldEnough = age >= 18; // but we dont need this we can use direct age >= 18
+
+ if(/*isOldEnough*/age >= 18){
+        console.log('Yunus can apply for driver license.')
+ } else {
+        const yearsLeft = 18 - age;
+        console.log(`Yunus has to wait ${yearsLeft} years for apply :()`)
+ }
+
+ const birthYearr = 2005;
+ let century;
+ if(birthYearr <= 2000) {
+        century = 20;
+ } else {
+        century = 21;
+ };
+
+ console.log(century);
