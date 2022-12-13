@@ -48,4 +48,37 @@ console.log(ageYunus > ageKerime); //true >, <, =, >=, <=
 console.log(ageKerime >= 18); //true
 console.log(ageYunus <= 28); //false
 
+
+
+let x,y;  //we created 2 variable in 1 line
+x = y = 25 - 10 - 5;
+console.log(x,y);
+
+let now = 2022;
+const ageYunus = now - 1992;
+const ageKerime = now - 1996;
+const averageAge = (ageYunus + ageKerime) / 2;
+console.log(ageYunus, ageKerime, averageAge);
 */
+
+        //BMİ EXERCİSE
+
+let weightOfMark = 78;
+const heightOfMark = 1.69;
+
+let weightOfJohn = 92;
+const heightOfJohn= 1.95;
+
+let bmiOfMark = weightOfMark / (heightOfMark ** 2);
+let bmiOfJohn = weightOfJohn / (heightOfJohn * heightOfJohn);
+const markHigherBMI = bmiOfMark > bmiOfJohn;
+console.log(markHigherBMI);
+/*
+let markHigherBMI = true;
+let markLoverBMI = false;
+ if (bmiOfMark > bmiOfJohn){
+        console.log(markHigherBMI)
+ } else {
+        console.log(markLoverBMI)
+ };
+ */
