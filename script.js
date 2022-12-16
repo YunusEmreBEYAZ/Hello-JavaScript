@@ -59,7 +59,7 @@ const ageYunus = now - 1992;
 const ageKerime = now - 1996;
 const averageAge = (ageYunus + ageKerime) / 2;
 console.log(ageYunus, ageKerime, averageAge);
-*/
+
 
         //BMİ EXERCİSE
 
@@ -73,7 +73,7 @@ let bmiOfMark = weightOfMark / (heightOfMark ** 2);
 let bmiOfJohn = weightOfJohn / (heightOfJohn * heightOfJohn);
 const markHigherBMI = bmiOfMark > bmiOfJohn;
 console.log(markHigherBMI);
-/*
+
 let markHigherBMI = true;
 let markLoverBMI = false;
  if (bmiOfMark > bmiOfJohn){
@@ -81,7 +81,7 @@ let markLoverBMI = false;
  } else {
         console.log(markLoverBMI)
  };
- */
+
 
  let firstName = 'Yunus';
  let job = 'Web Developer';
@@ -103,7 +103,7 @@ let markLoverBMI = false;
  const age = 2;
  const isOldEnough = age >= 18; // but we dont need this we can use direct age >= 18
 
- if(/*isOldEnough*/age >= 18){
+ if(age >= 18){
         console.log('Yunus can apply for driver license.')
  } else {
         const yearsLeft = 18 - age;
@@ -119,3 +119,52 @@ let markLoverBMI = false;
  };
 
  console.log(century);
+*/
+/*
+       //Ternary Operator:
+ let age = 18;
+ let message;
+ age >= 16? (message = 'You can drive'):(message = 'You can not drive.');
+ console.log(message); 
+
+ let authenticated = false;
+ let nextURL = authenticated? (alert('You will redirect to admin area'), '/admin'):(alert('Access denied'), '/403');
+ 
+ console.log(nextURL);
+
+ let cigarette = 8.40;
+ let price;
+ cigarette >= 8 ? (price = 'Too Expensive'):(price = 'I can buy it.');
+ console.log(price);
+
+ let speed = 70;
+let message = speed >= 120 ? 'Too Fast' : speed >= 80 ? 'Fast' : 'OK';
+
+*/
+
+let weightOfMark = 78;
+const heightOfMark = 1.69;
+
+let weightOfJohn = 92;
+const heightOfJohn= 1.95;
+
+let bmiOfMark = weightOfMark / (heightOfMark ** 2);
+let bmiOfJohn = weightOfJohn / (heightOfJohn * heightOfJohn);
+/*
+const markHigherBMI = bmiOfMark > bmiOfJohn;
+console.log(markHigherBMI);
+ 
+let markHigherBMI = true;
+let markLoverBMI = false;
+ if (bmiOfMark > bmiOfJohn){
+        console.log(markHigherBMI)
+ } else {
+        console.log(markLoverBMI)
+ };  */ 
+
+
+ if (bmiOfMark > bmiOfJohn){
+       console.log("Mark's BMI is higher then Jhon's");
+ } else {
+       console.log("Mark's BMI is lower than Jhon's")
+ }
