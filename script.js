@@ -317,7 +317,7 @@ The traffic light is on red
 */
 
        // The Switch Statement
-
+/*
 const day = 'sunday';
 
 switch(day) {
@@ -342,7 +342,7 @@ switch(day) {
               console.log('There is no longer days after');
 
 }
-/*
+
 if(day === 'monday'){
        console.log('Just work Javascript');
 } else if(day === 'tuesday'){
@@ -360,3 +360,14 @@ if(day === 'monday'){
        console.log('There is no longer days after');
 }
 */
+/*
+const myAge = 30;
+//myAge >= 18 ? console.log('I am allowed to drive car.') : console.log('I am not allowed to drive car.');
+const canDrive = myAge >= 18 ? 'Allowed' : 'Not Allowed';
+console.log(`Can I drive car? : ${myAge >= 18 ? 'Allowed' : 'Not Allowed'}`);
+*/
+
+const earnedTip = 40;
+const expectedTip = earnedTip >= 50 && earnedTip <= 300 ? earnedTip * 0.15 : earnedTip * 0.2;
+console.log(`The bill was ${earnedTip}, the expected tip is ${expectedTip}, and expected total value is ${earnedTip + expectedTip}`);
+
