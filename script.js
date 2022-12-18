@@ -367,6 +367,9 @@ const canDrive = myAge >= 18 ? 'Allowed' : 'Not Allowed';
 console.log(`Can I drive car? : ${myAge >= 18 ? 'Allowed' : 'Not Allowed'}`);
 */
 
+
+// eğer fatura 50 ile 300 arasında ise %15 tip farklı değer ise %20 tip alacağınızı hesaplayın
+
 const earnedTip = 40;
 const expectedTip = earnedTip >= 50 && earnedTip <= 300 ? earnedTip * 0.15 : earnedTip * 0.2;
 console.log(`The bill was ${earnedTip}, the expected tip is ${expectedTip}, and expected total value is ${earnedTip + expectedTip}`);
