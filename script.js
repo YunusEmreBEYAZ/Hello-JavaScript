@@ -263,7 +263,7 @@ if (winnerTeam > 0){
 } else {
        console.log("There is no winner!")
 };
-*/
+
 
 const dolphins = (97 + 112 + 1) / 3;
 const koalas = (109 + 95 + 1) / 3;
@@ -279,3 +279,84 @@ if (dolphins > koalas && dolphins >= 100){
        console.log("Both team are LOOSERS!")
 }
 
+let myString = 'hello,this,is,a,difficult,to,read,sentence';
+myString = myString.split(',').join(' ');
+console.log(myString);
+*/
+
+              //PREP EXERCISE
+
+"use strict";
+/**
+ * The `state` property says what the traffic light's state (i.e. colour) is at
+ * that moment.
+
+const trafficLight = {
+  state: "green",
+};
+
+let rotations = 0;
+while (rotations < 2) {
+  const currentState = trafficLight.state;
+  console.log("The traffic light is on", currentState);
+
+  // TODO
+  // if the color is green, turn it orange
+  // if the color is orange, turn it red
+  // if the color is red, add 1 to rotations and turn it green
+}
+*/
+/**
+ * The output should be:
+The traffic light is on green
+The traffic light is on orange
+The traffic light is on red
+The traffic light is on green
+The traffic light is on orange
+The traffic light is on red
+*/
+
+       // The Switch Statement
+
+const day = 'sunday';
+
+switch(day) {
+       case 'monday':
+              console.log('Just work Javascript');
+              break;
+       case 'tuesday':
+              console.log('Go to the camp for stamp');
+              break;
+       case 'wednesday':
+              break;
+       case 'thursday':
+              break;
+       case 'friday':
+              console.log('Go to the cuma');
+              break;
+       case 'saturday':
+       case 'sunday':
+              console.log('Keep Working!');
+              break;
+       default:
+              console.log('There is no longer days after');
+
+}
+/*
+if(day === 'monday'){
+       console.log('Just work Javascript');
+} else if(day === 'tuesday'){
+       console.log('Go to the camp for stamp');
+
+} else if(day === 'wednesday'){
+
+} else if(day === 'thursday'){
+
+} else if(day === 'friday'){
+       console.log('Go to the cuma');
+} else if(day === 'saturday' || day === 'sunday'){
+       console.log('Keep Working!');
+} else {
+       console.log('There is no longer days after');
+}
+*/
