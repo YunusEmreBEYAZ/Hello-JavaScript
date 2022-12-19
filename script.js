@@ -1,3 +1,4 @@
+'use srtict';
 /*
 console.log('Hello World!')
 let age = 23;
@@ -365,7 +366,7 @@ const myAge = 30;
 //myAge >= 18 ? console.log('I am allowed to drive car.') : console.log('I am not allowed to drive car.');
 const canDrive = myAge >= 18 ? 'Allowed' : 'Not Allowed';
 console.log(`Can I drive car? : ${myAge >= 18 ? 'Allowed' : 'Not Allowed'}`);
-*/
+
 
 
 // eğer fatura 50 ile 300 arasında ise %15 tip farklı değer ise %20 tip alacağınızı hesaplayın
@@ -373,4 +374,75 @@ console.log(`Can I drive car? : ${myAge >= 18 ? 'Allowed' : 'Not Allowed'}`);
 const earnedTip = 40;
 const expectedTip = earnedTip >= 50 && earnedTip <= 300 ? earnedTip * 0.15 : earnedTip * 0.2;
 console.log(`The bill was ${earnedTip}, the expected tip is ${expectedTip}, and expected total value is ${earnedTip + expectedTip}`);
+*/
+/*
+function myname(){
+       console.log('My name is Yunus Emre BEYAZ');
+}
 
+myname();
+myname();
+myname();
+*/
+/*
+function juiceProcess(apples, oranges){
+       const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+       return juice;
+}
+
+const appleJuice = ` You can make tasty apple ${juiceProcess(4, 1)}.`;
+console.log(appleJuice);
+const orangeAppleJuice = `If you want to make tasty orange juice, you can use ${juiceProcess(2,5)}`;
+console.log(orangeAppleJuice);
+*/
+/*
+function ageCalculate(birthYear){
+       /*
+       const age = 2022 - birthYear; ==> bunu kısaltabiliriz.
+       return age;
+      
+      return 2022 - birthYear;
+}
+/*
+const yunusAge = `Yunus is ${ageCalculate(1992)} years old and Kerime is ${ageCalculate(1996)} years old.`;
+console.log(yunusAge);
+
+const seymaAge = birthYear => 2022 - birthYear;
+const seyma = seymaAge(1996);
+console.log(seyma);
+
+function yearsForRetirement(birthYear, firstName){
+       const ageCurrent = 2022 - birthYear;
+       const retirement = 65 - ageCurrent;
+       return `${firstName} needs to work ${retirement} years for retiring.`
+}
+console.log(yearsForRetirement(1992, 'Yunus'));
+
+              //  ARRAYS
+const friends = ['Kerime', 'Seyma', 'Yasin', 'Fatih', 'Mirza']; // bu normal kullanımıdır. bunu yapmaslıyız.
+//console.log(friends);
+
+const cars = new Array('Tesla', 'BMW', 'AUDI'); // bu da farklı yapılışı ancak bunu tavsiye etmiyorlar.
+//console.log(cars);
+console.log(friends.length); // Array de kaç element olduğunu gösterir => 5
+console.log(friends[friends.length - 1]); // Shows us the last element in Array.
+
+friends[0] = 'Emin';  // we can change elements in array even if it's a const !!!
+console.log(friends);
+
+//friends =  ['ali', 'veli']; // But we can't change all array with new value.
+//we can change values 1 by 1
+
+const firstName = 'Yunus';
+const yunus = [firstName, 'BEYAZ', 2022 - 1992, 'Web Developer', friends];
+console.log(yunus);
+
+const calcAge = function(birthYear1){
+       return 2022 - birthYear1;
+}
+const years = [1992, 1996, 1964, 2000, 2020];
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
+
+*/
