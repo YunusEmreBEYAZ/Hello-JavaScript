@@ -446,3 +446,29 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 
 */
+const friends = ['Kerime', 'Seyma', 'Yasin',]; // bu normal kullanımıdır. bunu yapmaslıyız.
+friends.push('Ali'); // this is using for add new element to end of the array.
+
+friends.unshift('Myself'); // this is using for add new element to the beggining of array
+friends.pop(); //this is using to remove the last element.
+friends.shift(); // this is using to remove the first element.
+console.log(friends); 
+console.log(friends.indexOf('Yasin')); // for finding the element's position.
+console.log(friends.indexOf('Kamuran')); // if you use an not existing element, console will shows us -1 .
+console.log(friends.includes('Yasin')); // if you want to check if an element is in your array or not? "includes" gives you an true/false boolean for that.
+console.log(friends.includes('Mahmut'));
+
+if (friends.includes('Seymas')){
+       console.log("She is not your friend. She is your sister!");
+} else if(friends.includes('Kerimes')){
+       console.log("She is not your friend she is your wife!");
+} else {
+       console.log("You have realy good friends.")
+}
+
+
+
+
+
+
+
