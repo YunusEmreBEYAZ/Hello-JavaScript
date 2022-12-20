@@ -397,13 +397,13 @@ console.log(orangeAppleJuice);
 */
 /*
 function ageCalculate(birthYear){
-       /*
-       const age = 2022 - birthYear; ==> bunu kısaltabiliriz.
-       return age;
+       
+       //const age = 2022 - birthYear; ==> bunu kısaltabiliriz.
+       //return age;
       
       return 2022 - birthYear;
 }
-/*
+
 const yunusAge = `Yunus is ${ageCalculate(1992)} years old and Kerime is ${ageCalculate(1996)} years old.`;
 console.log(yunusAge);
 
@@ -445,7 +445,7 @@ const years = [1992, 1996, 1964, 2000, 2020];
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
-*/
+
 const friends = ['Kerime', 'Seyma', 'Yasin',]; // bu normal kullanımıdır. bunu yapmaslıyız.
 friends.push('Ali'); // this is using for add new element to end of the array.
 
@@ -467,8 +467,22 @@ if (friends.includes('Seymas')){
 }
 
 
+//const bill = 40;
+//const tip= bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+//console.log(`The bill was ${bill}, the expected tip is ${tip}, and expected total value is ${bill + tip}`);
+       // calculate tip exercise
+const calcTip = function calcTip(bill){
+       return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+       
+}
 
+const bill = [125, 555, 44];
+const tip = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+console.log(bill, tip);
 
+const total = [bill[0] + tip[0], bill[1] + tip[1], bill[2] + tip[2]];
+console.log(total);
+*/
 
 
 
