@@ -482,7 +482,77 @@ console.log(bill, tip);
 
 const total = [bill[0] + tip[0], bill[1] + tip[1], bill[2] + tip[2]];
 console.log(total);
+
+              // OBJECTS
+
+
+const yunus = {
+       firstName: 'Yunus',
+       lastName: 'Beyaz',
+       age: 2022 - 1992,
+       job: 'Web Developer',
+       friends: ['Ali', 'Ahmet', 'Ayse']
+};
+
+//console.log(yunus);
+console.log(yunus.age);
+console.log(yunus['age']);
+
+// We can add new values inside of object:
+
+yunus.location = 'Netherlands';
+yunus['email'] = 'yebeyaz@gmail.com';
+
+const keyName = 'Name';
+console.log(yunus['first' + keyName]);
+
+const whatYouWant = prompt('What do you want to learn about Yunus? Write below one of them: firstName, lastName, age, job, friends');
+console.log(yunus[whatYouWant]);
+
+console.log(yunus);
+
+
+const jonas = {
+       friends: ['Ali', 'Veli', 'Yunus'],
+       
+
+}
+
+console.log(jonas.friends[0]);
 */
+
+const yunus = {
+       firstName: 'Yunus',
+       lastName: 'Beyaz',
+       birthYear: 1992,
+       job: 'Web Developer',
+       friends: ['Ali', 'Ahmet', 'Ayse'],
+       hasDriverLicense: true,
+/*
+       calcAge: function(birthYear){
+              return 2022 - birthYear;
+       }
+*/      
+  /*     calcAge: function(){
+              return 2022 - this.birthYear;
+       }
+       */
+       calcAge: function () {
+              this.age = 2022 - this.birthYear;
+              return this.age;
+       },
+
+       getSummary: function () {
+              return `${this.firstName} is a ${this.calcAge()} years old ${yunus.job} and he ${this.hasDriverLicense ? "has" : "hasn't"} driver license.`
+       }
+
+
+
+};
+
+//console.log(yunus.calcAge());
+//console.log(yunus.calcAge(1992));
+console.log(yunus.getSummary());
 
 
 
