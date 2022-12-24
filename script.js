@@ -519,7 +519,7 @@ const jonas = {
 }
 
 console.log(jonas.friends[0]);
-*/
+
 
 const yunus = {
        firstName: 'Yunus',
@@ -528,15 +528,15 @@ const yunus = {
        job: 'Web Developer',
        friends: ['Ali', 'Ahmet', 'Ayse'],
        hasDriverLicense: true,
-/*
+
        calcAge: function(birthYear){
               return 2022 - birthYear;
        }
-*/      
-  /*     calcAge: function(){
+     
+    calcAge: function(){
               return 2022 - this.birthYear;
        }
-       */
+       
        calcAge: function () {
               this.age = 2022 - this.birthYear;
               return this.age;
@@ -553,6 +553,33 @@ const yunus = {
 //console.log(yunus.calcAge());
 //console.log(yunus.calcAge(1992));
 console.log(yunus.getSummary());
+/
+              // LOOPS
+const months = [
+       'Ocak',
+       'Şubat',
+       'mart',
+       'nisan',
+       'mayıs',
+       'haziran',
+       'temmuz',
+       'ağustos',
+       'eylül',
+       'ekim',
+       'kasım',
+       'aralık',
+];
+       // while loop
+let i = 0;
+let uzun = months.length;
 
+while (i < uzun){
+       console.log('Güzel Günler')
+       i++;
+}
 
-
+              //for loop
+for (let days = 1; days <= 7; days++){
+       console.log(`What a beautiful ${days}.`);
+}
+*/
