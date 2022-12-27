@@ -623,7 +623,7 @@ for (let set = 1; set < 4; set++){
               console.log(spor[i]);
        }
 }
-*/
+
 
 let randomNumber = Math.trunc(Math.random() * 6) + 1;
 //console.log(randomNumber);
@@ -634,3 +634,32 @@ while (randomNumber !== 6){
        
 }
        console.log(`Lucky Number is ${randomNumber}`);
+
+
+let i = 6;
+
+do {
+       console.log(`While Loop ${i}`);
+       i++;
+} while (i < 5)
+
+       // for of loop:
+const months = [
+       'Ocak',
+       'Şubat',
+       'mart',
+       'nisan',
+       'mayıs',
+       'haziran',
+       'temmuz',
+       'ağustos',
+       'eylül',
+       'ekim',
+       'kasım',
+       'aralık',
+];
+
+for (const month of months){
+       console.log(month);
+}
+*/
