@@ -200,7 +200,7 @@ console.log(String(yunus));
 
         coertion is very different :
        When we use + like this;
-       console.log('I am ' + 30 + ' years old.')  => javascript forces 23 to be a string and we see I am 30 years old.I
+       console.log('I am ' + 30 + ' years old.')  => javascript forces 30 to be a string and we see I am 30 years old.I
        console.log('30' - 5 - 12)  => SHOWS US 13 . javascript forces strings to be Number. but be carefull. If you use + it wont change to number !!!!
        console.log('30' + 5 + '10') => shows us 30510 !!!!!
        + ile numarayı stringe çevirir.
@@ -210,7 +210,7 @@ console.log(String(yunus));
        console.log(n);
 
        Boolean convertion is little different:
-       Only 0 = number zero, '' = empty string , undefined, null and NAN şs false. all others are true.
+       Only 0 = number zero, '' = empty string , undefined, null and NAN is false. all others are true.
        console.log(Boolean(0));  //false
        console.log(Boolean('')); //false
        console.log(Boolean('yunus'));  //true
@@ -582,4 +582,55 @@ while (i < uzun){
 for (let days = 1; days <= 7; days++){
        console.log(`What a beautiful ${days}.`);
 }
+
+
+
+const yunusArray = [
+       'Yunus',
+       'Beyaz',
+       2022 - 1992,
+       'Web Developer',
+       ['Ali', 'Veli', 'Mehmet'],
+       true
+];
+
+const types = [];
+
+for (let i = 0; i< yunusArray.length ; i++){
+       if (yunusArray[i] === 'Web Developer') break;
+       
+       console.log(yunusArray[i]);
+}
+
+/*
+let years = [1990, 1992, 1996, 2000];
+let ages = [];
+
+for(let i = 0; i < years.length; i++){
+       ages.push(2022 - years[i]);
+}
+console.log(ages);
+
+
+let spor = [ '15xMekik', '15xŞınav', '10xÇök-Kalk'];
+
+for (let set = 1; set < 4; set++){
+
+       console.log(`Spor set: ${set}`);
+
+       
+       for (let i = 0 ; i <= spor.length - 1; i++) {
+              console.log(spor[i]);
+       }
+}
 */
+
+let randomNumber = Math.trunc(Math.random() * 6) + 1;
+//console.log(randomNumber);
+
+while (randomNumber !== 6){
+       console.log(`Our lucky number is not ${randomNumber}`);
+       randomNumber = Math.trunc(Math.random() * 6) + 1;
+       
+}
+       console.log(`Lucky Number is ${randomNumber}`);
