@@ -662,4 +662,110 @@ const months = [
 for (const month of months){
        console.log(month);
 }
+
+
+const calcTip = function (bill){
+       return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+       
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+for (let i = 0; i < bills.length; i++){
+       const tip = calcTip(bills[i]);
+       tips.push(tip);
+       totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals);
+
+const calcAverage = function (arr){
+       let sum = 0;
+       for(let i = 0; i < arr.length; i++){
+              sum += arr[i];
+       }
+       return sum / arr.length;
+}
+
+console.log(calcAverage(totals));
+
+let sum = 0;
+tips.forEach(i => {
+       sum += i;
+});
+console.log(sum / tips.length);
+
+
+let myString = 'hello,this,is,a,difficult,to,read,sentence';
+
+myString = myString.split(',').join(' ');
+console.log(myString);
+
+for (let i = 0; i <= 20; i++){
+       if (i % 2 == 0){
+              console.log(`the ${i} is even.`);
+       } else {
+              console.log(`the ${i} is odd.`);
+       }
+
+};
+
+              // FOR İN LOOP:
+
+const yunus = {
+       firstName: 'Yunus',
+       lastName: 'Beyaz',
+       age: 2022 - 1992,
+       job: 'Web Developer',
+       friends: ['Ali', 'Ahmet', 'Ayse']
+};
+
+for (let key in yunus){
+       console.log(key, yunus[key]);
+}
+
+for (let indexOfBooks in listOfBooks){
+       const myBooks = listOfBooks[indexOfBooks];
+
+       if(myBooks.alreadyRead){
+              console.log(`${myBooks.title} by ${myBooks.author} is already read`);
+       } else {
+              console.log(`${myBooks.title} by ${myBooks.author} is need to read.`)
+       }
+}
+
 */
+
+const listOfBooks = {
+first: {
+       title: 'suç ve ceza',
+       author: 'dostoyevski',
+       alreadyRead: true
+},
+second: {
+       title: 'cin ali',
+       author: 'ali baba',
+       alreadyRead: true
+},
+third: {
+       title: 'ezel',
+       author: 'tuncel kurtiz',
+       alreadyRead: false
+}
+};
+
+//for(let key  in listOfBooks.first){
+for(let key  in listOfBooks){     
+       const myBooks = listOfBooks[key];
+       console.log(key);
+     
+       if(myBooks.alreadyRead){
+              console.log(`${myBooks .title} is already read.`);
+       } else {
+              console.log(`${myBooks .title} is needs to read.`);
+       }
+     
+     
+}
+
