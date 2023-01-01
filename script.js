@@ -735,7 +735,7 @@ for (let indexOfBooks in listOfBooks){
        }
 }
 
-*/
+
 
 const listOfBooks = {
 first: {
@@ -769,3 +769,107 @@ for(let key  in listOfBooks){
      
 }
 
+
+let kerime = "i love you.";
+kerime = kerime.toUpperCase();
+console.log(kerime);
+
+
+       // sayıları küçükten büyüğe dizme
+var sayilar = [13, 34, 22, 150, 130];
+ 
+console.log(sayilar.sort(function(a, b){return a - b}));
+
+var arabalar = ["Toyota","Volvo","BMW","Hyundai","Audi"];
+ 
+console.log(arabalar.sort().reverse());
+
+
+
+let firstLetter = function(){
+       return "Hello World!";
+}
+
+console.log(firstLetter());
+
+
+let firstMessage = 'Hello,my,name,is,yunus.';
+firstMessage = firstMessage.replace(/,/ig, " ");
+console.log(firstMessage);
+
+
+let fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+let fruitsArr = fruitsStr.split(", ");
+//console.log(fruitsArr[0]);
+for (let key in fruitsArr){
+       console.log(fruitsArr[key]);
+}
+
+let x = "3.86 half pass";
+console.log(parseInt(x));
+*/
+
+/**
+ * You're at a party and you feel thirsty! However, you've got 5 friends who are also in need of a drink. Let's go get them a drink.
+ *
+ * Declare a variable that holds an empty array, called drinkTray.
+ * Create a loop that runs 5 times. On each iteration, push a drink into the drinkTray variable. The drinkTray can only hold at most two instances of the same drink type, for example it can only hold 2 colas, 2 lemonades, 2 waters.
+ * 
+ * Log to the console: "Hey guys, I brought a [INSERT VALUES FROM ARRAY]!" (For example: "Hey guys, I brought a cola, cola, lemonade, lemonade, water!")
+ */
+
+// There are 3 different types of drinks:
+/*
+let drinkTypes =['cola', 'lemonade', 'water'];
+let drinkTray = [];
+
+for (let i = 0; i < drinkTypes.length; i++) {
+       for (let j = 0; j < 2; j++){
+              if (drinkTray.length < 5) {
+              drinkTray.push(drinkTypes[i]);  
+       }
+}
+}
+console.log(`Hey guys, I brought a ${drinkTray.join(', ')}!`);
+
+
+//customer wants to calculate amplitude of the temperatures.
+
+const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+
+const tempAmplitude = function(temps){
+       let max = temps[0];
+       let min = temps[0];
+       
+       for(let i = 0; i < temps.length; i++){
+
+              if(typeof temps[i] !== 'number') continue;
+
+              if (temps[i] > max) max = temps[i];
+              if (temps[i] < min) min = temps[i];
+       }    
+       console.log(min, max);
+       return max - min;
+/*
+       let min = temps[0];
+       for(let m = 0; m < temps.length; m++){
+              if(temps[m] < min ) min = temps[m];
+       }
+       console.log(min);
+      
+}
+
+const amplitude = tempAmplitude(temperatures);
+console.log(amplitude);
+ */
+
+
+let now = new Date();
+console.log(now);
+let dayOfWeek = now.getDay();
+
+
+if(dayOfWeek == 0){
+       console.log("Have a nice weekend!");
+}
