@@ -864,12 +864,109 @@ const amplitude = tempAmplitude(temperatures);
 console.log(amplitude);
  */
 
-
+/*
 let now = new Date();
 console.log(now);
 let dayOfWeek = now.getDay();
 
+for(let i = 0; i <7; i++){
+switch(i){
+       case 0:
+       console.log('Today is Sunday. You must study Web Development!');
+       
 
-if(dayOfWeek == 0){
-       console.log("Have a nice weekend!");
+       case 1:
+              console.log('Today is Monday. You must study Web Development!');
+       
+
+       case 2:
+              console.log('Today is Tuesday. You must go to camp for stamp!');
+       
+
+       case 3:
+              console.log('Today is Wednesday. You must study Web Development!');
+       
+
+       case 4:
+              console.log('Today is Thursday. You must study Web Development!');
+       
+
+       case 5:
+              console.log('Today is Friday. You must go to CUMA!');
+       
+
+       case 6:
+              console.log('Today is Saturday. You must study Web Development!');
+       
+
+       };
+       return i;
 }
+
+
+var counts = ["one", "two", "three", "four", "five"];
+var reversed = counts.reverse(); 
+
+console.log('counts', counts); // Outputs: five,four,three,two,one
+//console.log(reversed); // Output: five,four,three,two,one
+
+
+let numbers = [ -8, 15, 88, -150, 150, 888];
+
+console.log(Math.max(...numbers));
+
+function findMin(array){
+       return Math.min.apply(null,array);
+};
+
+console.log(findMin(numbers), findMax(numbers));
+
+let ankara = "hello world";
+function disemvowel(str) {
+       return str.replace(/[aeiou]/ig, "");
+     
+   }
+
+
+console.log(disemvowel(ankara));
+
+
+let numbers = [ -8, 15, 88, -150, 150, 888];
+
+function findMax(array){
+       return Math.max(...array);
+}
+
+function findMin(array){
+       return Math.min.apply(null,array);
+};
+*/
+
+const persons = [
+       {name: "Yunus", age: 30},
+       {name: 'Kerime', age:26},
+       {name: 'Mirza', age:25}
+]
+/*
+persons.sort(function(a,b){return a.age - b.age});
+console.log(persons);
+
+persons.push({name: 'Fatih', age: 31});
+console.log(persons);
+*/
+
+persons.sort(function(a,b){
+       let x = a.name.toLocaleLowerCase();
+       let y = b.name.toLocaleLowerCase();
+       if(x < y){
+              return -1;
+       }
+       if(x > y){
+              return 1;
+       }
+
+       return 0;
+})
+
+console.log(persons);
+
