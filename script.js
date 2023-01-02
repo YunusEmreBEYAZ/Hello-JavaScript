@@ -940,20 +940,20 @@ function findMax(array){
 function findMin(array){
        return Math.min.apply(null,array);
 };
-*/
+
 
 const persons = [
        {name: "Yunus", age: 30},
        {name: 'Kerime', age:26},
        {name: 'Mirza', age:25}
 ]
-/*
+
 persons.sort(function(a,b){return a.age - b.age});
 console.log(persons);
 
 persons.push({name: 'Fatih', age: 31});
 console.log(persons);
-*/
+
 
 persons.sort(function(a,b){
        let x = a.name.toLocaleLowerCase();
@@ -970,3 +970,21 @@ persons.sort(function(a,b){
 
 console.log(persons);
 
+
+function persons(firstName,lastName){
+       let id = firstName + " " + lastName;
+       return id;
+}
+
+console.log(persons('yunus', 'beyaz'));
+
+
+
+function sayHello(name){
+       let names = name || 'Guest';
+       console.log('Hello ' + names);
+       
+}
+
+sayHello();
+*/
