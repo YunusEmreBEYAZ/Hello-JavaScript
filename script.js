@@ -987,4 +987,160 @@ function sayHello(name){
 }
 
 sayHello();
+
+
+function divideNumber(divident,divisor){
+       const divided = divident / divisor;
+       const arr = [divident, divisor, divided];
+       return arr;
+}
+console.log(divideNumber(10,2));
+
+
+let getSum = function(num1,num2){
+       return num1 + num2;
+}
+
+console.log(getSum(5, 1));
+
+let newSum = getSum(5, 5);
+
+console.log(newSum);
 */
+/*
+const changeToKelvin = function() {
+       const measurement = {
+              type: 'temp',
+              unit: 'celcius',
+              value: Number(prompt('Degrees celcius'))
+       }
+       console.table(measurement);
+       console.log(measurement.value);
+       const kelvin = measurement.value + 273;
+       return kelvin;
+
+};
+;
+console.log(changeToKelvin());
+*/
+/*
+const books = {
+       "name": "Cin ali",
+       "year": "1990",
+       readYear: "2005"
+};
+
+console.log(books.name);
+console.log(books["name"]);
+
+var person = {
+       name: "Peter",
+       age: 28,
+       gender: "Male"
+   };
+   
+   var key = prompt("Enter any property name to get its value");
+   alert(person[key]); // Outputs: Peter (if enter "name")
+ 
+
+const fruits = ['apple', 'banana', 'orange'];
+for(let j = 0; j < 2; j++){
+       for(let i = 0; i < fruits.length; i++){
+          if(fruits[i] === 'banana'){
+                 console.log('This is banana');
+              } else if(fruits[i] === 'apple'){
+              console.log('This is apple');
+           } else {
+              console.log('this is orange');
+ 
+       }
+      // console.log(i);
+}
+}
+
+
+let myName = 'Yunus';
+
+function getMyName(){
+       myName = 'Emre';
+}
+getMyName();
+console.log('My Name is', myName);
+ */
+/*
+const numbers = [1, 2, 3];
+const string = ['fruit', 'vegetable'];
+
+const combined = [...numbers, ...string(0)]// ...numbers[1], ...string[1], ...numbers[2], ...string[2], ...numbers[3], ...string[3]];
+console.log(combined);
+*/
+/*
+const students = [
+       {firstName: 'Yunus', lastName: 'BEYAZ', grade: 8},
+       {firstName: 'Mirza', lastName: 'ALICI', grade: 9},
+       {firstName: 'Kerime', lastName: 'BEYAZ', grade: 10},
+       {firstName: 'Ali', lastName: 'VELİ', grade: 5}
+];
+for(let i = 0; i < students.length; i++){
+       console.log(`Hello ${students[i].firstName}, your grade is ${students[i].grade} and you ${students[i].grade >= 8 ? 'passed' : 'failed'} the exam.`);
+};
+
+
+let favoriteTree = 'birch';
+// actual: whatever is stored in favoriteTree on this line
+// expected: 'birch'
+const prediction1 = favoriteTree === 'bierch';
+console.assert(prediction1);
+
+
+function runExperiment(sampleSize) {
+       const valueCounts = [0, 0, 0, 0, 0, 0];
+     
+       for(let i = 0; i < sampleSize.length; i++){
+         let dieNumber = Math.floor(Math.random() * 6 + 1);
+         if(dieNumber === 1){
+              valueCounts[0]++
+         } else if(dieNumber === 2){
+              valueCounts[1]++
+         } else if (dieNumber === 3){
+              valueCounts[2]++
+         } else if (dieNumber === 4){
+              valueCounts[3]++
+         } else if (dieNumber === 5){
+              valueCounts[4]++
+         } else if (dieNumber === 6){
+              valueCounts[5]++
+         } else {
+              console.log('Error');
+         }
+
+       };
+
+}
+console.log(runExperiment(15));
+     
+       // TODO
+       // Write a for loop that iterates `sampleSize` times (sampleSize is a number).
+       // In each loop iteration:
+       //
+       // 1. Generate a random integer between 1 and 6 (as if throwing a six-sided die).
+       // 2. Add `1` to the element of the `valueCount` that corresponds to the random
+       //    value from the previous step. Use the first element of `valueCounts`
+       //    for keeping a count how many times the value 1 is thrown, the second
+       //    element for value 2, etc.
+
+       */
+       const reservations = [];
+
+       const bookings = function(tableNum, numPassenger = 1,  price = numPassenger * 30){
+              const booking = {
+                     tableNum,
+                     numPassenger,
+                     price,
+              };
+              console.log(booking)
+              reservations.push(booking.tableNum);
+       };
+       bookings('B25', 5);
+       console.log(reservations);
+      // booking('B25', undefined, 250);
