@@ -1144,3 +1144,11 @@ console.log(runExperiment(15));
        bookings('B25', 5);
        console.log(reservations);
       // booking('B25', undefined, 250);
+
+  const workArray = tasks.map((minToHour) => minToHour.duration / 60);
+  const totalWorkMonday = workArray.reduce((total, hours) => {
+    return total + hours;
+  });
+  const totalIncome = totalWorkMonday * rate;
+  return `€${totalIncome.toFixed(2)}`;
+}
